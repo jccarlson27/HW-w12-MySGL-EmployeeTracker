@@ -1,5 +1,5 @@
 const connection = require("./connection");
-
+ // these are all of the options for the database and conntecting information and setting it up to more and add things based on selection. 
 class DB {
   // Keeping a reference to the connection on the class in case we need it later
   constructor(connection) {
