@@ -13,7 +13,7 @@ function init() {
 
   loadMainPrompts();
 }
-
+//all of the choices for the different prompts
 async function loadMainPrompts() {
   const { choice } = await prompt([
     {

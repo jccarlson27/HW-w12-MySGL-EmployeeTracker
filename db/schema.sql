@@ -1,13 +1,13 @@
 DROP DATABASE IF EXISTS employees;
 CREATE DATABASE employees;
-
+-- making the data base and dropping it if it exists
 USE employees;
-
+-- uding the database
 CREATE TABLE department (
   id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(30) UNIQUE NOT NULL
 );
-
+--making the tbles
 CREATE TABLE role (
   id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(30) UNIQUE NOT NULL,
@@ -16,7 +16,7 @@ CREATE TABLE role (
   INDEX dep_ind (department_id),
   CONSTRAINT fk_department FOREIGN KEY (department_id) REFERENCES department(id) ON DELETE CASCADE
 );
-
+--making new table
 CREATE TABLE employee (
   id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   first_name VARCHAR(30) NOT NULL,
@@ -28,3 +28,4 @@ CREATE TABLE employee (
   INDEX man_ind (manager_id),
   CONSTRAINT fk_manager FOREIGN KEY (manager_id) REFERENCES employee(id) ON DELETE SET NULL
 );
+--making new table
