@@ -7,7 +7,9 @@ VALUES
     ('Engineering'),
     ('Finance'),
     ('Legal');
+--adding department values
 
+--adding roles and vales for the jobs
 INSERT INTO role
     (title, salary, department_id)
 VALUES
