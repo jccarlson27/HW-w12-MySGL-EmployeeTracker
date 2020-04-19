@@ -1,5 +1,5 @@
 use employees;
-
+--using database
 INSERT INTO department
     (name)
 VALUES
